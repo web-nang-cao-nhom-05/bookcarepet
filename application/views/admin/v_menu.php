@@ -440,6 +440,13 @@
                                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
                             </li>
+							<li>
+                                <a href="<?=base_url();?>admin/quan_tri_dich_vu.html">
+                                    <i class="metismenu-icon pe-7s-plugin"></i>
+                                    Quản trị dịch vụ
+                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                </a>
+                            </li>
                             <li>
                                 <a href="<?=base_url();?>admin/quan_tri_phan_hoi.html">
                                     <i class="metismenu-icon pe-7s-id"></i>
