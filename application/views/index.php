@@ -93,14 +93,14 @@
 									<div class="text text-center">
 										<h2>Dịch vụ</h2>
 										
-										<p><a href="#" class="btn btn-primary">Xem chi tiết</a></p>
+									
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url(images/anh2.png);">
 									<div class="text px-3 py-1">
-										<h2 class="mb-0"><a href="#">Dịch vụ cung cấp đồ cho thú cưng</a></h2>
+										<h2 class="mb-0"><a href="<?=base_url();?>san_pham">Dịch vụ cung cấp đồ cho thú cưng</a></h2>
 									</div>
 								</div>
 								<div class="category-wrap ftco-animate img d-flex align-items-end" style="background-image: url(images/anh3.png);">
@@ -115,7 +115,7 @@
 					<div class="col-md-4">
 						<div class="category-wrap ftco-animate img mb-4 d-flex align-items-end" style="background-image: url(images/anh4.png);">
 							<div class="text px-3 py-1">
-								<h2 class="mb-0"><a href="#">Dịch vụ đặt chăm sóc, khám chữa cho thú cưng</a></h2>
+								<h2 class="mb-0"><a href="<?=base_url();?>dich_vu">Dịch vụ đặt chăm sóc, khám chữa cho thú cưng</a></h2>
 							</div>		
 						</div>
 						<div class="category-wrap ftco-animate img d-flex align-items-end" style="background-image: url(images/anh5.png);">
@@ -163,7 +163,7 @@
 	    					</div>
 	    					<div class="bottom-area d-flex px-3">
 	    						<div class="m-auto d-flex">
-	    							<a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
+	    							<a href="<?=base_url();?>dich_vu" class="add-to-cart d-flex justify-content-center align-items-center text-center">
 	    								<span><i class="ion-ios-menu"></i></span>
 	    							</a>
 	    							
@@ -180,6 +180,7 @@
     		</div>
     	</div>
     	</div>
+      
     </section>
 
     <section class="ftco-section testimony-section">
@@ -191,6 +192,7 @@
             <p>Giúp bạn tìm kiếm các sản phẩm dành cho thú cưng</p>
           </div>
         </div>
+        <a href="<?=base_url();?>san_pham">
         <div class="row ftco-animate">
           <div class="col-md-12">
             <div class="carousel-testimony owl-carousel">
@@ -199,7 +201,7 @@
                         ;?>
               <div class="item">
                 <div class="testimony-wrap p-4 pb-5">
-                  <img class="img-fluid" src="<?=base_url();?>/assets/images/<?=$row2->hinh_anh;?>" alt="Colorlib Template">
+                  <img class="img-fluid" src="<?=base_url();?>/assets/images/<?=$row2->hinh_anh;?>" >
             
                   <div class="text text-center">
                     
@@ -217,13 +219,12 @@
             <?php   
                         }
                         ;?>
-             <div class="item">
-               
-              </div>
+             
               
             </div>
           </div>
         </div>
+      </a>
       </div>
     </section>
 		
