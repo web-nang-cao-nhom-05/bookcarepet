@@ -62,7 +62,7 @@
                                             <div class="position-relative form-group"><label for="exampletaikhoan" class="">Tên tài khoản</label><input name="tai_khoan"  placeholder="Nhập tên tài khoản..." type="taikhoan" class="form-control"></div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="position-relative form-group"><label for="examplePassword" class="">Email</label><input name="email"  placeholder="Nhập email..." 
+                                            <div class="position-relative form-group"><label for="examplePassword" class="">Email</label><input name="email"  placeholder="Nhập email..." type="email"
                                                                                                                                                    class="form-control"></div>
                                         </div>
                                     </div>
