@@ -6,6 +6,8 @@ class Trang_chu extends CI_Controller {
 	
 	public function index()
 	{
+		// Load thư viện URL
+		$this->load->helper('url');
 		$this->load->database();
 
 		$this->load->helper('url');
