@@ -110,7 +110,7 @@
                     <div class="product">
 
                         <a href="dich_vu_chi_tiet.html" class="img-prod"><img src="<?=base_url();?>/images<?=$row->hinh_anh;?>" alt="Colorlib Template" style="width: 400px; height: 250px">
-                            <span class="status">40%</span>
+                           
                             <div class="overlay"></div>
                         </a>
                         
@@ -121,12 +121,12 @@
                             <h3><a href="#"><?=$row->ten_dich_vu?></a></h3>
                             <div class="d-flex">
                                 <div class="pricing">
-                                    <span class="btn btn-primary">Pet Mart</span><br><span>Số 3 Đại Cồ Việt,<br> Hai Bà Trưng</span>
+                                    <span class="btn btn-primary"><?=$row->ten_phong_kham?></span><br><span><?=$row->dia_chi?></span>
                                 </div>
                             </div>
                             <div class="d-flex">
                                 <div class="pricing">
-                                    <p class="price"><span class="mr-2 price-dc">300.000đ</span><span class="price-sale">180.000đ</span></p>
+                                    <span class="price-sale"><?=$row->gia?>đ</span></p>
                                 </div>
                             </div>
                             <div class="bottom-area d-flex px-3">
