@@ -17,11 +17,11 @@ class Quan_tri_dich_vu extends CI_Controller {
 		$this->load->model('m_ma_phong_kham');
 
 		// Load thư viện session
-		//$this->load->library('session');
+		$this->load->library('session');
 
-		//if ($this->session->userdata('email')=="") {
-		//	redirect(base_url()."admin/dang_nhap.html");
-		//}
+		if ($this->session->userdata('tai_khoan')=="") {
+			redirect(base_url()."admin/dang_nhap.html");
+		}
 	}
 
 	public function index()
