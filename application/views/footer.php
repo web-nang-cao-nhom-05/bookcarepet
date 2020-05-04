@@ -71,10 +71,10 @@
               <h2 class="ftco-heading-2">Giúp đỡ</h2>
               <div class="d-flex">
 	              <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
-	                <li><a href="#" class="py-2 d-block">Thông tin địa chỉ phòng khám</a></li>
-	                <li><a href="#" class="py-2 d-block">Thông tin bác sỹ</a></li>
-	                <li><a href="#" class="py-2 d-block">Thông tin nơi cung cấp đồ cho thú cưng</a></li>
-	                <li><a href="#" class="py-2 d-block">Thông tin giá cả đồ cho thú cưng</a></li>
+	                <li><a href="<?=base_url();?>tin_tuc">Thông tin địa chỉ phòng khám</a></li>
+	                <li><a href="<?=base_url();?>tin_tuc">Thông tin bác sỹ</a></li>
+	                <li><a href="<?=base_url();?>dich_vu">Thông tin nơi cung cấp đồ cho thú cưng</a></li>
+	                <li><a href="<?=base_url();?>dich_vu">Thông tin giá cả đồ cho thú cưng</a></li>
 	              </ul>
 	              
 	            </div>
