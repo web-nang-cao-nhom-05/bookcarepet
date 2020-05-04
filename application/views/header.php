@@ -63,8 +63,8 @@
 	          <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dịch Vụ</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="<?=base_url();?>dich_vu_cung_cap_do_cho_thu_cung.html">Dịch vụ cung cấp đồ cho thú cưng</a>
-              	<a class="dropdown-item" href="<?=base_url();?>dich_vu_cham_soc_kham_chua_cho_thu_cung.html">Dịch vụ chăm sóc, khám chữa cho thú cưng</a>
+              	<a class="dropdown-item" href="<?=base_url();?>san_pham">Dịch vụ cung cấp đồ cho thú cưng</a>
+              	<a class="dropdown-item" href="<?=base_url();?>dich_vu">Dịch vụ chăm sóc, khám chữa cho thú cưng</a>
               </div>
             </li>
 	          <li class="nav-item active"><a href="<?=base_url();?>tin_tuc.html" class="nav-link">Tin Tức</a></li>
