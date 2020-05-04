@@ -1,3 +1,36 @@
+   <section id="home-section" class="hero">
+      <div class="home-slider owl-carousel">
+        <div class="slider-item" style="background-image: url(images/bg_1.jpg);">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+              <div class="col-md-12 ftco-animate text-center">
+                <h1 class="mb-2">Đặt dịch vụ chăm sóc thú cưng từ các phòng khám uy tín</h1>
+                <h2 class="subheading mb-4">BookCarePet đóng vai trò trung gian kết nối giữa chủ thú cưng với bác sĩ, phòng khám</h2>
+                <p><a href="<?=base_url();?>dich_vu" class="btn btn-primary">Xem chi tiết</a></p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-item" style="background-image: url(images/bg_2.jpg);">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+              <div class="col-sm-12 ftco-animate text-center">
+                <h1 class="mb-2">Tìm kiếm nơi bán&amp; giá cả các sản phẩm cho thú cưng</h1>
+                <h2 class="subheading mb-4">BookCarePet đóng vai trò trung gian kết nối giữa chủ thú cưng với bác sĩ, phòng khám</h2>
+                <p><a  href="<?=base_url();?>dich_vu" class="btn btn-primary">Xem chi tiết</a></p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="ftco-section">
 			<div class="container">
