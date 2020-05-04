@@ -19,7 +19,7 @@ class quan_tri_tin_tuc extends CI_Controller {
 		// Load thư viện session
 		$this->load->library('session');
 
-		if ($this->session->userdata('email')=="") {
+		if ($this->session->userdata('tai_khoan')=="") {
 			redirect(base_url()."admin/dang_nhap.html");
 		}
 	}
