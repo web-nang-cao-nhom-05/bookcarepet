@@ -15,9 +15,9 @@ class San_pham extends CI_Controller {
 		//Viết câu lệnh truy vấn SQL
 		$query = $this->db->query("
 			SELECT *
-			FROM san_pham_pet
+			FROM san_pham
 			JOIN phong_kham
-		ON san_pham_pet.ma_phong_kham = phong_kham.ma_phong_kham
+		ON san_pham.ma_phong_kham = phong_kham.ma_phong_kham
 		");
 		
 
@@ -36,13 +36,13 @@ class San_pham extends CI_Controller {
 
 		// Kết nối đến MODEL
 		$this->load->model('m_san_pham');
-    	$ma_sp = $this->uri->segment(3);
+    	$ma_dv = $this->uri->segment(3);
     	$data['san_pham'] = $this->m_san_pham->lay_san_pham_theo_ID($ma_sp);
     	$query = $this->db->query("
 			SELECT *
-			FROM san_pham_pet
+			FROM san_pham
 			JOIN phong_kham
-		ON san_pham_pet.ma_phong_kham = phong_kham.ma_phong_kham
+		ON san_pham.ma_phong_kham = phong_kham.ma_phong_kham
 
 		");
 		$data['san_pham'] = $query->result();
