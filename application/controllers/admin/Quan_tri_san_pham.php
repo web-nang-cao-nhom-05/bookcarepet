@@ -52,11 +52,11 @@ class Quan_tri_san_pham extends CI_Controller {
 		$data['ma_phong_kham'] = $this->m_ma_phong_kham->lay_danh_sach_ma_phong_kham();
 
 		// Khai báo tiêu đề của trang
-		$data['tieu_de'] = "Thêm mới sản phẩm ";
+		$data['ten_san_pham'] = "Thêm mới sản phẩm ";
 
 		// Load ra được giao diện quản trị hệ thống
-		$this->load->view('admin/v_header', $data);
-		$this->load->view('admin/v_menu');
+		//$this->load->view('admin/v_header', $data);
+		//$this->load->view('admin/v_menu');
 		$this->load->view('admin/v_san_pham_them_moi', $data);
 	}
 
@@ -68,7 +68,7 @@ class Quan_tri_san_pham extends CI_Controller {
 		$this->m_san_pham->them_moi_san_pham();
 	
 		// Cho các bạn quay về trang Quản trị tin tức
-		redirect(base_url()."admin/Quan_tri_san_pham.html");
+		redirect(base_url()."admin/quan_tri_san_pham.html");
 	}
 
 	// Hàm này có tác dụng LOAD tin tức có ID cụ thể ra form để sửa thông tin
@@ -84,11 +84,11 @@ class Quan_tri_san_pham extends CI_Controller {
 		$data['ma_phong_kham'] = $this->m_ma_phong_kham->lay_danh_sach_ma_phong_kham();
 
 		// Khai báo tiêu đề của trang
-		$data['tieu_de'] = "Sửa sản phẩm";
+		$data['ten_san_pham'] = "Sửa sản phẩm";
 
 		// Load ra được giao diện quản trị hệ thống
-		$this->load->view('admin/v_header', $data);
-		$this->load->view('admin/v_menu');
+	//	$this->load->view('admin/v_header', $data);
+	//	$this->load->view('admin/v_menu');
 		$this->load->view('admin/v_san_pham_sua', $data);
 	}
 
