@@ -32,7 +32,7 @@
         {
 			// Dữ liệu thu được từ FORM nhập dữ liệu
 			$ma_phong_kham = $_POST['txtMaphongkham'];
-			$ten_sp = $_POST['txttensp'];
+			$ten_sp = $_POST['txtTensp'];
 			$nguoi_tao = $_POST['txtNguoiTao'];
 
 			// Xử lý đoạn UPLOAD ảnh minh họa
@@ -64,7 +64,7 @@
 			);
 
 			// Thực hiện chèn dữ liệu vào bảng TIN TỨC
-			$this->db->insert('san_pham_pet', $data);
+			$this->db->insert('san_pham', $data);
         }
 
 		public function sua_san_pham()
@@ -72,7 +72,7 @@
         	// Dữ liệu thu được từ FORM nhập dữ liệu
 			$ma_sp = $_POST['txtID'];
 			
-			$ten_sp = $_POST['txttensp'];
+			$ten_sp = $_POST['txtTensp'];
 			$ma_phong_kham = $_POST['txtMaphongkham'];
 			
 			$nguoi_tao = $_POST['txtNguoiTao'];
@@ -118,14 +118,14 @@
 
 			// Thực hiện cập nhật dữ liệu vào bảng TIN TỨC
 			$this->db->where('ma_sp', $ma_sp);
-			$this->db->update('san_pham_pet', $data);
+			$this->db->update('san_pham', $data);
         }
 
 		public function xoa_san_pham($ma_sp)
         {
 			// Thực hiện việc xóa dữ liệu
-			$this->db->where('ma_sp', $ma_sp);
-			$this->db->delete('san_pham_pet');
+			$this->db->where('ma_dv', $ma_sp);
+			$this->db->delete('san_pham');
         }
 
 	}
