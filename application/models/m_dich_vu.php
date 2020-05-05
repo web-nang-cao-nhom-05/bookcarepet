@@ -13,6 +13,17 @@
 			// Trả kết quả truy vấn dữ liệu
             return $query->result();
         }
+		public function lay_danh_sach_dich_vu()
+        {
+			// Viết câu lệnh truy vấn SQL lấy ra được danh sách các loại tin tức
+			$query = $this->db->query("
+				SELECT * 
+				FROM dich_vu
+			");
+
+			// Trả kết quả truy vấn dữ liệu
+            return $query->result();
+        }
 
         // Mục đích Lấy tin tức theo ID
 		public function lay_dich_vu_theo_ID($ma_dv)
