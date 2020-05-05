@@ -36,6 +36,7 @@ class phan_hoi extends CI_Controller {
 		$this->load->view('v_phan_hoi', $data);
 		$this->load->view('footer');
 	}
+	
 
 	public function thuc_hien_them_moi_phan_hoi()
 	{
