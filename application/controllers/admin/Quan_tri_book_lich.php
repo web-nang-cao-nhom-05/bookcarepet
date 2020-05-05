@@ -70,6 +70,16 @@ class Quan_tri_book_lich extends CI_Controller {
 		// Cho các bạn quay về trang Quản trị book_lich
 		redirect(base_url()."admin/quan_tri_book_lich");
 	}
+	public function thuc_hien_them_moi_book_lich_dv()
+	{
+		
+		
+		// Thên mới book lich thông qua qua MODEL
+		$this->m_book_lich->them_moi_book_lich();
+	
+		// Cho các bạn quay về trang Quản trị book_lich
+		redirect(base_url()."dich_vu");
+	}
 	// Hàm này có tác dụng LOAD tin tức có ID cụ thể ra form để sửa thông tin
 	public function sua()
 	{
