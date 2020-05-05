@@ -48,9 +48,9 @@ class Dich_vu extends CI_Controller {
 		$data['dich_vu'] = $query->result();
     //echo var_dump($data); exit();
 		
-		$this->load->view('header');
+		
 		$this->load->view('v_dich_vu_chi_tiet', $data);
-		$this->load->view('footer');
+		
 		
     }
 
