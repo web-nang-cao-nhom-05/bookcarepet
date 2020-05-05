@@ -1,1038 +1,237 @@
-   <div class="app-main__outer">
-                <div class="app-main__inner">
-                    <div class="app-page-title">
-                        <div class="page-title-wrapper">
-                            <div class="page-title-heading">
-                                <div class="page-title-icon">
-                                    <i class="pe-7s-power icon-gradient bg-mixed-hopes">
-                                    </i>
-                                </div>
-                            </div>
-                            <div class="page-title-actions">
-                            <div>
-                            <a href="./quan_tri_san_pham/them_moi_san_pham">
-                                <button class="ladda-button mb-2 mr-2 btn btn-danger" data-style="expand-right">
-                                    <span class="ladda-label">Thêm mới
-                                    </span>
-                                    <span class="ladda-spinner">
-                                    </span>
-                                    <div class="ladda-progress" style="width: 0px;"></div>
-                                </button>
-                                </a>
-                                </div>
-                            </div>    
-                        </div>
-                    </div>
-                    <h4 class="d-flex flex-wrap justify-content-between align-items-center mb-3">
-                        <div>Quản trị sản phẩm</div>
-                        <div class="col-12 col-md-3 p-0 mb-3">
-                            <input type="text" class="form-control" placeholder="Tìm kiếm...">
-                        </div>
-                    </h4>
-                    <div class="card mb-3">
-                        <div class="card-header pr-0 pl-0">
-                            <div class="row no-gutters align-items-center w-100">
-                                <div class="col font-weight-bold pl-3">Happy Pet Care</div>
-                                <div class="d-none d-md-block col-7 text-muted">
-                                    <div class="row no-gutters align-items-center">
-                                       
-                                        <div class="col-2">Ảnh</div>
-                                        <div class="col-4">Người cập nhật</div>
-                                       
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <?php foreach ($pk_1 as $row1) {
-                        ;?>
-                        <div class="card-body py-3">        
-                            <div class="row no-gutters align-items-center">
-                                <div class="col"><a href="javascript:void(0)" class="text-big font-weight-semibold"><?=$row1->ten_sp;?></a></div>
-                                <div class="d-none d-md-block col-6">        
-                                    <div class="row no-gutters align-items-center">
-                                        
-                                        <div class="media col-6 align-items-center">
-                                            <img style="width: 40px; height: auto;" src="../assets/images/<?=$row1->hinh_anh;?>  " alt="" class="d-block ui-w-30 rounded-circle">
-                                            <div class="media-body flex-truncate ml-1">
-                                                <a href="javascript:void(0)" class="d-block text-truncate"><?=$row1->nguoi_tao;?></a>
+   
+        <!-- END nav -->
 
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <a href="<?=base_url();?>admin/quan_tri_san_pham/sua/<?=$row1->ma_sp;?>">
-                                            <button class="ladda-button mb-2 mr-2 btn btn-danger" data-style="expand-right">
-                                                <span class="ladda-label">Sửa
-                                                </span>
-                                                <span class="ladda-spinner">
-                                                </span>
-                                                <div class="ladda-progress" style="width: 0px;"></div>
-                                            </button>
-                                            </a>
-                                            <a href="<?=base_url();?>admin/quan_tri_san_pham/xoa/<?=$row1->ma_sp;?>">
-                                            <button class="ladda-button mb-2 mr-2 btn btn-danger" data-style="expand-right">
-                                                <span class="ladda-label">Xóa
-                                                </span>
-                                                <span class="ladda-spinner">
-                                                </span>
-                                                <div class="ladda-progress" style="width: 0px;"></div>
-                                            </button>
-                                            </a>
-                                        </div>    
-                                    </div>        
-                                </div>
-                            </div>        
-                        </div>
-                        <?php   
-                        }
-                        ;?>
-                    </div>
+    <div class="hero-wrap hero-bread" style="background-image: url('<?=base_url();?>images/dvu8.png');">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="breadcrumb-area">
+        <!-- Top Breadcrumb Area -->
         
-                    <div class="card mb-3">
-                        <div class="card-header pr-0 pl-0">
-                            <div class="row no-gutters align-items-center w-100">
-                                <div class="col font-weight-bold pl-3">Pet City</div>
-                                <div class="d-none d-md-block col-7 text-muted">
-                                    <div class="row no-gutters align-items-center">
-                                       
-                                        <div class="col-2">Ảnh</div>
-                                        <div class="col-4">Người cập nhật</div>
-                                       
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <?php foreach ($pk_2 as $row2) {
-                        ;?>
-                        <div class="card-body py-3">        
-                            <div class="row no-gutters align-items-center">
-                                <div class="col"><a href="javascript:void(0)" class="text-big font-weight-semibold"><?=$row2->ten_sp;?></a></div>
-                                <div class="d-none d-md-block col-6">        
-                                    <div class="row no-gutters align-items-center">
-                                        
-                                        <div class="media col-6 align-items-center">
-                                            <img style="width: 40px; height: auto;" src="../assets/images/<?=$row2->hinh_anh;?>  " alt="" class="d-block ui-w-30 rounded-circle">
-                                            <div class="media-body flex-truncate ml-1">
-                                                <a href="javascript:void(0)" class="d-block text-truncate"><?=$row2->nguoi_tao;?></a>
-                                               
-                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <a href="<?=base_url();?>admin/quan_tri_san_pham/sua/<?=$row2->ma_sp;?>">
-                                            <button class="ladda-button mb-2 mr-2 btn btn-danger" data-style="expand-right">
-                                                <span class="ladda-label">Sửa
-                                                </span>
-                                                <span class="ladda-spinner">
-                                                </span>
-                                                <div class="ladda-progress" style="width: 0px;"></div>
-                                            </button>
-                                            </a>
-                                            <a href="<?=base_url();?>admin/quan_tri_san_pham/xoa/<?=$row2->ma_sp;?>">
-                                            <button class="ladda-button mb-2 mr-2 btn btn-danger" data-style="expand-right">
-                                                <span class="ladda-label">Xóa
-                                                </span>
-                                                <span class="ladda-spinner">
-                                                </span>
-                                                <div class="ladda-progress" style="width: 0px;"></div>
-                                            </button>
-                                            </a>
-                                        </div>    
-                                    </div>        
-                                </div>
-                            </div>        
-                        </div>
-                        <?php   
-                        }
-                        ;?>
-                    </div>
-                
-                 <div class="card mb-3">
-                        <div class="card-header pr-0 pl-0">
-                            <div class="row no-gutters align-items-center w-100">
-                                <div class="col font-weight-bold pl-3">Chan Chan Pet</div>
-                                <div class="d-none d-md-block col-7 text-muted">
-                                    <div class="row no-gutters align-items-center">
-                                       
-                                        <div class="col-2">Ảnh</div>
-                                        <div class="col-4">Người cập nhật</div>
-                                       
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="<?=base_url();?>trang_chu.html">Trang chủ</a></li>
+                            
+                            <li class="breadcrumb-item active" aria-current="page">Sản phẩm</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+        
 
-                        <?php foreach ($pk_3 as $row3) {
-                        ;?>
-                        <div class="card-body py-3">        
-                            <div class="row no-gutters align-items-center">
-                                <div class="col"><a href="javascript:void(0)" class="text-big font-weight-semibold"><?=$row3->ten_sp;?></a></div>
-                                <div class="d-none d-md-block col-6">        
-                                    <div class="row no-gutters align-items-center">
-                                        
-                                        <div class="media col-6 align-items-center">
-                                            <img style="width: 40px; height: auto;" src="../assets/images/<?=$row3->hinh_anh;?>  " alt="" class="d-block ui-w-30 rounded-circle">
-                                            <div class="media-body flex-truncate ml-1">
-                                                <a href="javascript:void(0)" class="d-block text-truncate"><?=$row3->nguoi_tao;?></a>
-                                                                                            </div>
-                                        </div>
-                                        <div class="col-3">
-                                            <a href="<?=base_url();?>admin/quan_tri_san_pham/sua/<?=$row3->ma_sp;?>">
-                                            <button class="ladda-button mb-2 mr-2 btn btn-danger" data-style="expand-right">
-                                                <span class="ladda-label">Sửa
-                                                </span>
-                                                <span class="ladda-spinner">
-                                                </span>
-                                                <div class="ladda-progress" style="width: 0px;"></div>
-                                            </button>
-                                            </a>
-                                            <a href="<?=base_url();?>admin/quan_tri_san_pham/xoa/<?=$row3->ma_sp;?>">
-                                            <button class="ladda-button mb-2 mr-2 btn btn-danger" data-style="expand-right">
-                                                <span class="ladda-label">Xóa
-                                                </span>
-                                                <span class="ladda-spinner">
-                                                </span>
-                                                <div class="ladda-progress" style="width: 0px;"></div>
-                                            </button>
-                                            </a>
-                                        </div>    
-                                    </div>        
+    <section class="ftco-section">
+        <div class="container">
+            
+            
+            <div class="row">
+             
+                <div class="col-md-6 col-lg-3 ftco-animate">
+               
+                <?php 
+                foreach ($san_pham as $row) {
+                         ;?>
+                    <div class="product">
+
+                        
+                           
+                            <div class="overlay"></div>
+                        </a>
+                        
+                        
+
+
+                        <div class="text py-3 pb-4 px-3 text-center">
+                            <h3><a href="<?=base_url();?>dich_vu/hien_thi_dich_vu_chi_tiet/<?=$row->ma_sp;?>"><?=$row->ten_sp;?></a></h3>
+                            <div class="d-flex">
+                                <div class="pricing">
+                                    <span class="btn btn-primary"><?=$row->ten_phong_kham?></span><br><span><?=$row->dia_chi?></span>
                                 </div>
-                            </div>        
+                            </div>
+                            <div class="d-flex">
+                                <div class="pricing">
+                                    <span class="price-sale"><?=$row->gia?>đ</span></p>
+                                </div>
+                            </div>
+                            <div class="bottom-area d-flex px-3">
+                                <div class="m-auto d-flex">
+                                    <a href="#" class="add-to-cart d-flex justify-content-center align-items-center text-center">
+                                        <span><i class="ion-ios-menu"></i></span>
+                                    </a>
+                                    <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+                                        <span><i class="ion-ios-cart"></i></span>
+                                    </a>
+                                    <a href="#" class="heart d-flex justify-content-center align-items-center ">
+                                        <span><i class="ion-ios-heart"></i></span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <?php   
-                        }
-                        ;?>
                     </div>
-                <div class="app-wrapper-footer">
-                    <div class="app-footer">
-                        <div class="app-footer__inner">
-                            <div class="app-footer-left">
-                                <div class="footer-dots">
-                                    <div class="dropdown">
-                                        <a aria-haspopup="true" aria-expanded="false" data-toggle="dropdown" class="dot-btn-wrapper">
-                                            <i class="dot-btn-icon lnr-bullhorn icon-gradient bg-mean-fruit"></i>
-                                            <div class="badge badge-dot badge-abs badge-dot-sm badge-danger">Notifications</div>
-                                        </a>
-                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu">
-                                            <div class="dropdown-menu-header mb-0">
-                                                <div class="dropdown-menu-header-inner bg-deep-blue">
-                                                    <div class="menu-header-image opacity-1" style="background-image: url('assets/images/dropdown-header/city3.jpg');"></div>
-                                                    <div class="menu-header-content text-dark">
-                                                        <h5 class="menu-header-title">Notifications</h5>
-                                                        <h6 class="menu-header-subtitle">You have <b>21</b> unread messages</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <ul class="tabs-animated-shadow tabs-animated nav nav-justified tabs-shadow-bordered p-3">
-                                                <li class="nav-item">
-                                                    <a role="tab" class="nav-link active" data-toggle="tab" href="#tab-messages-header1">
-                                                        <span>Messages</span>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a role="tab" class="nav-link" data-toggle="tab" href="#tab-events-header1">
-                                                        <span>Events</span>
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a role="tab" class="nav-link" data-toggle="tab" href="#tab-errors-header1">
-                                                        <span>System Errors</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <div class="tab-content">
-                                                <div class="tab-pane active" id="tab-messages-header1" role="tabpanel">
-                                                    <div class="scroll-area-sm">
-                                                        <div class="scrollbar-container">
-                                                            <div class="p-3">
-                                                                <div class="notifications-box">
-                                                                    <div class="vertical-time-simple vertical-without-time vertical-timeline vertical-timeline--one-column">
-                                                                        <div class="vertical-timeline-item dot-danger vertical-timeline-element">
-                                                                            <div><span class="vertical-timeline-element-icon bounce-in"></span>
-                                                                                <div class="vertical-timeline-element-content bounce-in"><h4 class="timeline-title">All Hands Meeting</h4><span class="vertical-timeline-element-date"></span></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="vertical-timeline-item dot-warning vertical-timeline-element">
-                                                                            <div><span class="vertical-timeline-element-icon bounce-in"></span>
-                                                                                <div class="vertical-timeline-element-content bounce-in"><p>Yet another one, at <span class="text-success">15:00 PM</span></p><span class="vertical-timeline-element-date"></span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="vertical-timeline-item dot-success vertical-timeline-element">
-                                                                            <div><span class="vertical-timeline-element-icon bounce-in"></span>
-                                                                                <div class="vertical-timeline-element-content bounce-in">
-                                                                                    <h4 class="timeline-title">Build the production release
-                                                                                        <span class="badge badge-danger ml-2">NEW</span>
-                                                                                    </h4>
-                                                                                    <span class="vertical-timeline-element-date"></span></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="vertical-timeline-item dot-primary vertical-timeline-element">
-                                                                            <div><span class="vertical-timeline-element-icon bounce-in"></span>
-                                                                                <div class="vertical-timeline-element-content bounce-in">
-                                                                                    <h4 class="timeline-title">Something not important
-                                                                                        <div class="avatar-wrapper mt-2 avatar-wrapper-overlap">
-                                                                                            <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                                                                <div class="avatar-icon"><img
-                                                                                                        src="assets/images/avatars/1.jpg"
-                                                                                                        alt=""></div>
-                                                                                            </div>
-                                                                                            <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                                                                <div class="avatar-icon"><img
-                                                                                                        src="assets/images/avatars/2.jpg"
-                                                                                                        alt=""></div>
-                                                                                            </div>
-                                                                                            <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                                                                <div class="avatar-icon"><img
-                                                                                                        src="assets/images/avatars/3.jpg"
-                                                                                                        alt=""></div>
-                                                                                            </div>
-                                                                                            <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                                                                <div class="avatar-icon"><img
-                                                                                                        src="assets/images/avatars/4.jpg"
-                                                                                                        alt=""></div>
-                                                                                            </div>
-                                                                                            <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                                                                <div class="avatar-icon"><img
-                                                                                                        src="assets/images/avatars/5.jpg"
-                                                                                                        alt=""></div>
-                                                                                            </div>
-                                                                                            <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                                                                <div class="avatar-icon"><img
-                                                                                                        src="assets/images/avatars/9.jpg"
-                                                                                                        alt=""></div>
-                                                                                            </div>
-                                                                                            <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                                                                <div class="avatar-icon"><img
-                                                                                                        src="assets/images/avatars/7.jpg"
-                                                                                                        alt=""></div>
-                                                                                            </div>
-                                                                                            <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                                                                <div class="avatar-icon"><img
-                                                                                                        src="assets/images/avatars/8.jpg"
-                                                                                                        alt=""></div>
-                                                                                            </div>
-                                                                                            <div class="avatar-icon-wrapper avatar-icon-sm avatar-icon-add">
-                                                                                                <div class="avatar-icon"><i>+</i></div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </h4>
-                                                                                    <span class="vertical-timeline-element-date"></span></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="vertical-timeline-item dot-info vertical-timeline-element">
-                                                                            <div><span class="vertical-timeline-element-icon bounce-in"></span>
-                                                                                <div class="vertical-timeline-element-content bounce-in"><h4 class="timeline-title">This dot has an info state</h4><span class="vertical-timeline-element-date"></span></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="vertical-timeline-item dot-danger vertical-timeline-element">
-                                                                            <div><span class="vertical-timeline-element-icon bounce-in"></span>
-                                                                                <div class="vertical-timeline-element-content bounce-in"><h4 class="timeline-title">All Hands Meeting</h4><span class="vertical-timeline-element-date"></span></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="vertical-timeline-item dot-warning vertical-timeline-element">
-                                                                            <div><span class="vertical-timeline-element-icon bounce-in"></span>
-                                                                                <div class="vertical-timeline-element-content bounce-in"><p>Yet another one, at <span class="text-success">15:00 PM</span></p><span class="vertical-timeline-element-date"></span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="vertical-timeline-item dot-success vertical-timeline-element">
-                                                                            <div><span class="vertical-timeline-element-icon bounce-in"></span>
-                                                                                <div class="vertical-timeline-element-content bounce-in">
-                                                                                    <h4 class="timeline-title">Build the production release
-                                                                                        <span class="badge badge-danger ml-2">NEW</span>
-                                                                                    </h4>
-                                                                                    <span class="vertical-timeline-element-date"></span></div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="vertical-timeline-item dot-dark vertical-timeline-element">
-                                                                            <div><span class="vertical-timeline-element-icon bounce-in"></span>
-                                                                                <div class="vertical-timeline-element-content bounce-in"><h4 class="timeline-title">This dot has a dark state</h4><span class="vertical-timeline-element-date"></span></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane" id="tab-events-header1" role="tabpanel">
-                                                    <div class="scroll-area-sm">
-                                                        <div class="scrollbar-container">
-                                                            <div class="p-3">
-                                                                <div class="vertical-without-time vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
-                                                                    <div class="vertical-timeline-item vertical-timeline-element">
-                                                                        <div><span class="vertical-timeline-element-icon bounce-in"><i class="badge badge-dot badge-dot-xl badge-success"> </i></span>
-                                                                            <div class="vertical-timeline-element-content bounce-in"><h4 class="timeline-title">All Hands Meeting</h4>
-                                                                                <p>Lorem ipsum dolor sic amet, today at <a href="javascript:void(0);">12:00 PM</a></p><span class="vertical-timeline-element-date"></span></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="vertical-timeline-item vertical-timeline-element">
-                                                                        <div><span class="vertical-timeline-element-icon bounce-in"><i class="badge badge-dot badge-dot-xl badge-warning"> </i></span>
-                                                                            <div class="vertical-timeline-element-content bounce-in"><p>Another meeting today, at <b class="text-danger">12:00 PM</b></p>
-                                                                                <p>Yet another one, at <span class="text-success">15:00 PM</span></p><span class="vertical-timeline-element-date"></span></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="vertical-timeline-item vertical-timeline-element">
-                                                                        <div><span class="vertical-timeline-element-icon bounce-in"><i class="badge badge-dot badge-dot-xl badge-danger"> </i></span>
-                                                                            <div class="vertical-timeline-element-content bounce-in"><h4 class="timeline-title">Build the production release</h4>
-                                                                                <p>Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna elit enim at minim veniam quis nostrud</p><span
-                                                                                        class="vertical-timeline-element-date"></span></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="vertical-timeline-item vertical-timeline-element">
-                                                                        <div><span class="vertical-timeline-element-icon bounce-in"><i class="badge badge-dot badge-dot-xl badge-primary"> </i></span>
-                                                                            <div class="vertical-timeline-element-content bounce-in"><h4 class="timeline-title text-success">Something not important</h4>
-                                                                                <p>Lorem ipsum dolor sit amit,consectetur elit enim at minim veniam quis nostrud</p><span class="vertical-timeline-element-date"></span></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="vertical-timeline-item vertical-timeline-element">
-                                                                        <div><span class="vertical-timeline-element-icon bounce-in"><i class="badge badge-dot badge-dot-xl badge-success"> </i></span>
-                                                                            <div class="vertical-timeline-element-content bounce-in"><h4 class="timeline-title">All Hands Meeting</h4>
-                                                                                <p>Lorem ipsum dolor sic amet, today at <a href="javascript:void(0);">12:00 PM</a></p><span class="vertical-timeline-element-date"></span></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="vertical-timeline-item vertical-timeline-element">
-                                                                        <div><span class="vertical-timeline-element-icon bounce-in"><i class="badge badge-dot badge-dot-xl badge-warning"> </i></span>
-                                                                            <div class="vertical-timeline-element-content bounce-in"><p>Another meeting today, at <b class="text-danger">12:00 PM</b></p>
-                                                                                <p>Yet another one, at <span class="text-success">15:00 PM</span></p><span class="vertical-timeline-element-date"></span></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="vertical-timeline-item vertical-timeline-element">
-                                                                        <div><span class="vertical-timeline-element-icon bounce-in"><i class="badge badge-dot badge-dot-xl badge-danger"> </i></span>
-                                                                            <div class="vertical-timeline-element-content bounce-in"><h4 class="timeline-title">Build the production release</h4>
-                                                                                <p>Lorem ipsum dolor sit amit,consectetur eiusmdd tempor incididunt ut labore et dolore magna elit enim at minim veniam quis nostrud</p><span
-                                                                                        class="vertical-timeline-element-date"></span></div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="vertical-timeline-item vertical-timeline-element">
-                                                                        <div><span class="vertical-timeline-element-icon bounce-in"><i class="badge badge-dot badge-dot-xl badge-primary"> </i></span>
-                                                                            <div class="vertical-timeline-element-content bounce-in"><h4 class="timeline-title text-success">Something not important</h4>
-                                                                                <p>Lorem ipsum dolor sit amit,consectetur elit enim at minim veniam quis nostrud</p><span class="vertical-timeline-element-date"></span></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane" id="tab-errors-header1" role="tabpanel">
-                                                    <div class="scroll-area-sm">
-                                                        <div class="scrollbar-container">
-                                                            <div class="no-results pt-3 pb-0">
-                                                                <div class="swal2-icon swal2-success swal2-animate-success-icon">
-                                                                    <div class="swal2-success-circular-line-left" style="background-color: rgb(255, 255, 255);"></div>
-                                                                    <span class="swal2-success-line-tip"></span>
-                                                                    <span class="swal2-success-line-long"></span>
-                                                                    <div class="swal2-success-ring"></div>
-                                                                    <div class="swal2-success-fix" style="background-color: rgb(255, 255, 255);"></div>
-                                                                    <div class="swal2-success-circular-line-right" style="background-color: rgb(255, 255, 255);"></div>
-                                                                </div>
-                                                                <div class="results-subtitle">All caught up!</div>
-                                                                <div class="results-title">There are no system errors!</div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item-divider nav-item"></li>
-                                                <li class="nav-item-btn text-center nav-item">
-                                                    <button class="btn-shadow btn-wide btn-pill btn btn-focus btn-sm">View Latest Changes</button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="dots-separator"></div>
-                                    <div class="dropdown">
-                                        <a class="dot-btn-wrapper" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false">
-                                            <i class="dot-btn-icon lnr-earth icon-gradient bg-happy-itmeo">
-                                            </i>
-                                        </a>
-                                        <div tabindex="-1" role="menu" aria-hidden="true" class="rm-pointers dropdown-menu">
-                                            <div class="dropdown-menu-header">
-                                                <div class="dropdown-menu-header-inner pt-4 pb-4 bg-focus">
-                                                    <div class="menu-header-image opacity-05" style="background-image: url('assets/images/dropdown-header/city2.jpg');"></div>
-                                                    <div class="menu-header-content text-center text-white">
-                                                        <h6 class="menu-header-subtitle mt-0">
-                                                            Choose Language
-                                                        </h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <h6 tabindex="-1" class="dropdown-header">
-                                                Popular Languages
-                                            </h6>
-                                            <button type="button" tabindex="0" class="dropdown-item">
-                                                <span class="mr-3 opacity-8 flag large US"></span>
-                                                USA
-                                            </button>
-                                            <button type="button" tabindex="0" class="dropdown-item">
-                                                <span class="mr-3 opacity-8 flag large CH"></span>
-                                                Switzerland
-                                            </button>
-                                            <button type="button" tabindex="0" class="dropdown-item">
-                                                <span class="mr-3 opacity-8 flag large FR"></span>
-                                                France
-                                            </button>
-                                            <button type="button" tabindex="0" class="dropdown-item">
-                                                <span class="mr-3 opacity-8 flag large ES"></span>
-                                                Spain
-                                            </button>
-                                            <div tabindex="-1" class="dropdown-divider"></div>
-                                            <h6 tabindex="-1" class="dropdown-header">Others</h6>
-                                            <button type="button" tabindex="0" class="dropdown-item active">
-                                                <span class="mr-3 opacity-8 flag large DE"></span>
-                                                Germany
-                                            </button>
-                                            <button type="button" tabindex="0" class="dropdown-item">
-                                                <span class="mr-3 opacity-8 flag large IT"></span>
-                                                Italy
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="dots-separator"></div>
-                                    <div class="dropdown">
-                                        <a class="dot-btn-wrapper dd-chart-btn-2" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false">
-                                            <i class="dot-btn-icon lnr-pie-chart icon-gradient bg-love-kiss"></i>
-                                            <div class="badge badge-dot badge-abs badge-dot-sm badge-warning">Notifications</div>
-                                        </a>
-                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-xl rm-pointers dropdown-menu">
-                                            <div class="dropdown-menu-header">
-                                                <div class="dropdown-menu-header-inner bg-premium-dark">
-                                                    <div class="menu-header-image" style="background-image: url('assets/images/dropdown-header/abstract4.jpg');"></div>
-                                                    <div class="menu-header-content text-white">
-                                                        <h5 class="menu-header-title">Users Online
-                                                        </h5>
-                                                        <h6 class="menu-header-subtitle">Recent Account Activity Overview
-                                                        </h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="widget-chart">
-                                                <div class="widget-chart-content">
-                                                    <div class="icon-wrapper rounded-circle">
-                                                        <div class="icon-wrapper-bg opacity-9 bg-focus">
-                                                        </div>
-                                                        <i class="lnr-users text-white">
-                                                        </i>
-                                                    </div>
-                                                    <div class="widget-numbers">
-                                                        <span>344k</span>
-                                                    </div>
-                                                    <div class="widget-subheading pt-2">
-                                                        Profile views since last login
-                                                    </div>
-                                                    <div class="widget-description text-danger">
-                                                        <span class="pr-1">
-                                                            <span>176%</span>
-                                                        </span>
-                                                        <i class="fa fa-arrow-left"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="widget-chart-wrapper">
-                                                    <div id="dashboard-sparkline-carousel-4-pop"></div>
-                                                </div>
-                                            </div>
-                                            <ul class="nav flex-column">
-                                                <li class="nav-item-divider mt-0 nav-item">
-                                                </li>
-                                                <li class="nav-item-btn text-center nav-item">
-                                                    <button class="btn-shine btn-wide btn-pill btn btn-warning btn-sm">
-                                                        <i class="fa fa-cog fa-spin mr-2">
-                                                        </i>
-                                                        View Details
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                    
+                    <?php
+                            }
+                    ;?>
+                </div>
                 
-                                </div>
-                            </div>
-                            <div class="app-footer-right">
-                                <ul class="header-megamenu nav">
-                                    <li class="nav-item">
-                                        <a data-placement="top" rel="popover-focus" data-offset="300" data-toggle="popover-custom" class="nav-link">
-                                            Footer Menu
-                                            <i class="fa fa-angle-up ml-2 opacity-8"></i>
-                                        </a>
-                                        <div class="rm-max-width rm-pointers">
-                                            <div class="d-none popover-custom-content">
-                                                <div class="dropdown-mega-menu dropdown-mega-menu-sm">
-                                                    <div class="grid-menu grid-menu-2col">
-                                                        <div class="no-gutters row">
-                                                            <div class="col-sm-6 col-xl-6">
-                                                                <ul class="nav flex-column">
-                                                                    <li class="nav-item-header nav-item">Overview</li>
-                                                                    <li class="nav-item"><a class="nav-link"><i class="nav-link-icon lnr-inbox"> </i><span>Contacts</span></a></li>
-                                                                    <li class="nav-item"><a class="nav-link"><i class="nav-link-icon lnr-book"> </i><span>Incidents</span>
-                                                                        <div class="ml-auto badge badge-pill badge-danger">5</div>
-                                                                    </a></li>
-                                                                    <li class="nav-item"><a class="nav-link"><i class="nav-link-icon lnr-picture"> </i><span>Companies</span></a></li>
-                                                                    <li class="nav-item"><a disabled="" class="nav-link disabled"><i class="nav-link-icon lnr-file-empty"> </i><span>Dashboards</span></a></li>
-                                                                </ul>
-                                                            </div>
-                                                            <div class="col-sm-6 col-xl-6">
-                                                                <ul class="nav flex-column">
-                                                                    <li class="nav-item-header nav-item">Sales &amp; Marketing</li>
-                                                                    <li class="nav-item"><a class="nav-link">Queues</a></li>
-                                                                    <li class="nav-item"><a class="nav-link">Resource Groups</a></li>
-                                                                    <li class="nav-item"><a class="nav-link">Goal Metrics
-                                                                        <div class="ml-auto badge badge-warning">3</div>
-                                                                    </a></li>
-                                                                    <li class="nav-item"><a class="nav-link">Campaigns</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a data-placement="top" rel="popover-focus" data-offset="300" data-toggle="popover-custom" class="nav-link">
-                                            Grid Menu
-                                            <div class="badge badge-dark ml-0 ml-1">
-                                                <small>NEW</small>
-                                            </div>
-                                            <i class="fa fa-angle-up ml-2 opacity-8"></i>
-                                        </a>
-                                        <div class="rm-max-width rm-pointers">
-                                            <div class="d-none popover-custom-content">
-                                                <div class="dropdown-menu-header">
-                                                    <div class="dropdown-menu-header-inner bg-tempting-azure">
-                                                        <div class="menu-header-image opacity-1" style="background-image: url('assets/images/dropdown-header/city5.jpg');"></div>
-                                                        <div class="menu-header-content text-dark"><h5 class="menu-header-title">Two Column Grid</h5><h6 class="menu-header-subtitle">Easy grid navigation inside popovers</h6></div>
-                                                    </div>
-                                                </div>
-                                                <div class="grid-menu grid-menu-2col">
-                                                    <div class="no-gutters row">
-                                                        <div class="col-sm-6">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-dark"><i class="lnr-lighter text-dark opacity-7 btn-icon-wrapper mb-2"> </i>Automation
-                                                            </button>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-danger"><i class="lnr-construction text-danger opacity-7 btn-icon-wrapper mb-2"> </i>Reports
-                                                            </button>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-success"><i class="lnr-bus text-success opacity-7 btn-icon-wrapper mb-2"> </i>Activity
-                                                            </button>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <button class="btn-icon-vertical btn-transition-text btn-transition btn-transition-alt pt-2 pb-2 btn btn-outline-focus"><i class="lnr-gift text-focus opacity-7 btn-icon-wrapper mb-2"> </i>Settings
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <ul class="nav flex-column">
-                                                    <li class="nav-item-divider nav-item"></li>
-                                                    <li class="nav-item-btn clearfix nav-item">
-                                                        <div class="float-left">
-                                                            <button class="btn btn-link btn-sm">Link Button</button>
-                                                        </div>
-                                                        <div class="float-right">
-                                                            <button class="btn-shadow btn btn-info btn-sm">Info Button</button>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
-                </div>    </div>
-    </div>
-</div>
-<div class="app-drawer-wrapper">
-    <div class="drawer-nav-btn">
-        <button type="button" class="hamburger hamburger--elastic is-active">
-            <span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
-    </div>
-    <div class="drawer-content-wrapper">
-        <div class="scrollbar-container">
-            <h3 class="drawer-heading">Servers Status</h3>
-            <div class="drawer-section">
+
+                </div>
+                
+
+                
+                
+                
+            <div class="row mt-5">
+          <div class="col text-center">
+            <div class="block-27">
+              <ul>
+                <li><a href="#">&lt;</a></li>
+                <li class="active"><span>1</span></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&gt;</a></li>
+              </ul>
+            </div>
+          </div>
+        
+        
+
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light">
+      <div class="container py-4">
+        <div class="row d-flex justify-content-center py-5">
+          
+          <div class="col-md-6 d-flex align-items-center">
+            <div id="booking" class="section">
+        <div class="section-center">
+            <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <div class="progress-box"><h4>Server Load 1</h4>
-                            <div class="circle-progress circle-progress-gradient-xl mx-auto">
-                                <small></small>
+                    <div class="booking-form">
+                        <div class="booking-bg">
+                            <div class="form-header">
+                                <h2>Đặt lịch online giảm ngay 10%</h2>
+                                <h6>VUI LÒNG ĐỂ LẠI THÔNG TIN ĐẦY ĐỦ SẼ GIÚP BOOKCAREPET <br>PHỤC VỤ BẠN TỐT NHẤT</h6>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="progress-box"><h4>Server Load 2</h4>
-                            <div class="circle-progress circle-progress-success-xl mx-auto">
-                                <small></small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="progress-box"><h4>Server Load 3</h4>
-                            <div class="circle-progress circle-progress-danger-xl mx-auto">
-                                <small></small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="divider"></div>
-                <div class="mt-3"><h5 class="text-center card-title">Live Statistics</h5>
-                    <div id="sparkline-carousel-3"></div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="widget-chart p-0">
-                                <div class="widget-chart-content">
-                                    <div class="widget-numbers text-warning fsize-3">43</div>
-                                    <div class="widget-subheading pt-1">Packages</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="widget-chart p-0">
-                                <div class="widget-chart-content">
-                                    <div class="widget-numbers text-danger fsize-3">65</div>
-                                    <div class="widget-subheading pt-1">Dropped</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="widget-chart p-0">
-                                <div class="widget-chart-content">
-                                    <div class="widget-numbers text-success fsize-3">18</div>
-                                    <div class="widget-subheading pt-1">Invalid</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="text-center mt-2 d-block">
-                        <button class="mr-2 border-0 btn-transition btn btn-outline-danger">Escalate Issue</button>
-                        <button class="border-0 btn-transition btn btn-outline-success">Support Center</button>
-                    </div>
-                </div>
-            </div>
-            <h3 class="drawer-heading">File Transfers</h3>
-            <div class="drawer-section p-0">
-                <div class="files-box">
-                    <ul class="list-group list-group-flush">
-                        <li class="pt-2 pb-2 pr-2 list-group-item">
-                            <div class="widget-content p-0">
-                                <div class="widget-content-wrapper">
-                                    <div class="widget-content-left opacity-6 fsize-2 mr-3 text-primary center-elem">
-                                        <i class="fa fa-file-alt"></i>
-                                    </div>
-                                    <div class="widget-content-left">
-                                        <div class="widget-heading font-weight-normal">TPSReport.docx</div>
-                                    </div>
-                                    <div class="widget-content-right widget-content-actions">
-                                        <button class="btn-icon btn-icon-only btn btn-link btn-sm">
-                                            <i class="fa fa-cloud-download-alt"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="pt-2 pb-2 pr-2 list-group-item">
-                            <div class="widget-content p-0">
-                                <div class="widget-content-wrapper">
-                                    <div class="widget-content-left opacity-6 fsize-2 mr-3 text-warning center-elem">
-                                        <i class="fa fa-file-archive"></i>
-                                    </div>
-                                    <div class="widget-content-left">
-                                        <div class="widget-heading font-weight-normal">Latest_photos.zip</div>
-                                    </div>
-                                    <div class="widget-content-right widget-content-actions">
-                                        <button class="btn-icon btn-icon-only btn btn-link btn-sm">
-                                            <i class="fa fa-cloud-download-alt"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="pt-2 pb-2 pr-2 list-group-item">
-                            <div class="widget-content p-0">
-                                <div class="widget-content-wrapper">
-                                    <div class="widget-content-left opacity-6 fsize-2 mr-3 text-danger center-elem">
-                                        <i class="fa fa-file-pdf"></i>
-                                    </div>
-                                    <div class="widget-content-left">
-                                        <div class="widget-heading font-weight-normal">Annual Revenue.pdf</div>
-                                    </div>
-                                    <div class="widget-content-right widget-content-actions">
-                                        <button class="btn-icon btn-icon-only btn btn-link btn-sm">
-                                            <i class="fa fa-cloud-download-alt"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="pt-2 pb-2 pr-2 list-group-item">
-                            <div class="widget-content p-0">
-                                <div class="widget-content-wrapper">
-                                    <div class="widget-content-left opacity-6 fsize-2 mr-3 text-success center-elem">
-                                        <i class="fa fa-file-excel"></i>
-                                    </div>
-                                    <div class="widget-content-left">
-                                        <div class="widget-heading font-weight-normal">Analytics_GrowthReport.xls</div>
-                                    </div>
-                                    <div class="widget-content-right widget-content-actions">
-                                        <button class="btn-icon btn-icon-only btn btn-link btn-sm">
-                                            <i class="fa fa-cloud-download-alt"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <h3 class="drawer-heading">Tasks in Progress</h3>
-            <div class="drawer-section p-0">
-                <div class="todo-box">
-                    <ul class="todo-list-wrapper list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="todo-indicator bg-warning"></div>
-                            <div class="widget-content p-0">
-                                <div class="widget-content-wrapper">
-                                    <div class="widget-content-left mr-2">
-                                        <div class="custom-checkbox custom-control">
-                                            <input type="checkbox" id="exampleCustomCheckbox1266" class="custom-control-input">
-                                            <label class="custom-control-label" for="exampleCustomCheckbox1266">&nbsp;</label></div>
-                                    </div>
-                                    <div class="widget-content-left">
-                                        <div class="widget-heading">Wash the car
-                                            <div class="badge badge-danger ml-2">Rejected</div>
-                                        </div>
-                                        <div class="widget-subheading"><i>Written by Bob</i></div>
-                                    </div>
-                                    <div class="widget-content-right widget-content-actions">
-                                        <button class="border-0 btn-transition btn btn-outline-success">
-                                            <i class="fa fa-check"></i>
-                                        </button>
-                                        <button class="border-0 btn-transition btn btn-outline-danger">
-                                            <i class="fa fa-trash-alt"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="todo-indicator bg-focus"></div>
-                            <div class="widget-content p-0">
-                                <div class="widget-content-wrapper">
-                                    <div class="widget-content-left mr-2">
-                                        <div class="custom-checkbox custom-control">
-                                            <input type="checkbox" id="exampleCustomCheckbox1666" class="custom-control-input">
-                                            <label class="custom-control-label" for="exampleCustomCheckbox1666">&nbsp;</label></div>
-                                    </div>
-                                    <div class="widget-content-left">
-                                        <div class="widget-heading">Task with hover dropdown menu</div>
-                                        <div class="widget-subheading">
-                                            <div>By Johnny
-                                                <div class="badge badge-pill badge-info ml-2">NEW</div>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <span class="form-label">Họ tên* </span>
+                                        <td>
+                                            <div class="input-group mb-3">
+                                                <input type="text" required>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="widget-content-right widget-content-actions">
-                                        <div class="d-inline-block dropdown">
-                                            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="border-0 btn-transition btn btn-link">
-                                                <i class="fa fa-ellipsis-h">
-                                                </i>
-                                            </button>
-                                            <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right"><h6 tabindex="-1" class="dropdown-header">Header</h6>
-                                                <button type="button" disabled="" tabindex="-1" class="disabled dropdown-item">Action</button>
-                                                <button type="button" tabindex="0" class="dropdown-item">Another Action</button>
-                                                <div tabindex="-1" class="dropdown-divider"></div>
-                                                <button type="button" tabindex="0" class="dropdown-item">Another Action</button>
-                                            </div>
-                                        </div>
+                                        </td>
+                                        <span class="select-arrow"></span>
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="todo-indicator bg-primary"></div>
-                            <div class="widget-content p-0">
-                                <div class="widget-content-wrapper">
-                                    <div class="widget-content-left mr-2">
-                                        <div class="custom-checkbox custom-control">
-                                            <input type="checkbox" id="exampleCustomCheckbox4777" class="custom-control-input">
-                                            <label class="custom-control-label" for="exampleCustomCheckbox4777">&nbsp;</label></div>
-                                    </div>
-                                    <div class="widget-content-left flex2">
-                                        <div class="widget-heading">Badge on the right task</div>
-                                        <div class="widget-subheading">This task has show on hover actions!</div>
-                                    </div>
-                                    <div class="widget-content-right widget-content-actions">
-                                        <button class="border-0 btn-transition btn btn-outline-success">
-                                            <i class="fa fa-check">
-                                            </i>
-                                        </button>
-                                    </div>
-                                    <div class="widget-content-right ml-3">
-                                        <div class="badge badge-pill badge-success">Latest Task</div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <span class="form-label" >Điện thoại* </span>
+                                        <td>
+                                            <div class="input-group mb-3">
+                                                <input type="text" required>
+                                            </div>
+                                        </td>
+                                        <span class="select-arrow"></span>
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="todo-indicator bg-info"></div>
-                            <div class="widget-content p-0">
-                                <div class="widget-content-wrapper">
-                                    <div class="widget-content-left mr-2">
-                                        <div class="custom-checkbox custom-control">
-                                            <input type="checkbox" id="exampleCustomCheckbox2444" class="custom-control-input">
-                                            <label class="custom-control-label" for="exampleCustomCheckbox2444">&nbsp;</label></div>
-                                    </div>
-                                    <div class="widget-content-left mr-3">
-                                        <div class="widget-content-left"><img width="42" class="rounded" src="assets/images/avatars/1.jpg" alt=""/></div>
-                                    </div>
-                                    <div class="widget-content-left">
-                                        <div class="widget-heading">Go grocery shopping</div>
-                                        <div class="widget-subheading">A short description ...</div>
-                                    </div>
-                                    <div class="widget-content-right widget-content-actions">
-                                        <button class="border-0 btn-transition btn btn-sm btn-outline-success">
-                                            <i class="fa fa-check"></i>
-                                        </button>
-                                        <button class="border-0 btn-transition btn btn-sm btn-outline-danger">
-                                            <i class="fa fa-trash-alt"></i>
-                                        </button>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <span class="form-label" >Email* </span>
+                                        <td>
+                                            <div class="input-group mb-3">
+                                                <input type="text" required>
+                                            </div>
+                                        </td>
+                                        <span class="select-arrow"></span>
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="todo-indicator bg-success"></div>
-                            <div class="widget-content p-0">
-                                <div class="widget-content-wrapper">
-                                    <div class="widget-content-left mr-2">
-                                        <div class="custom-checkbox custom-control">
-                                            <input type="checkbox" id="exampleCustomCheckbox3222" class="custom-control-input">
-                                            <label class="custom-control-label" for="exampleCustomCheckbox3222">&nbsp;</label></div>
-                                    </div>
-                                    <div class="widget-content-left flex2">
-                                        <div class="widget-heading">Development Task</div>
-                                        <div class="widget-subheading">Finish React ToDo List App</div>
-                                    </div>
-                                    <div class="widget-content-right">
-                                        <div class="badge badge-warning mr-2">69</div>
-                                    </div>
-                                    <div class="widget-content-right">
-                                        <button class="border-0 btn-transition btn btn-outline-success">
-                                            <i class="fa fa-check">
-                                            </i>
-                                        </button>
-                                        <button class="border-0 btn-transition btn btn-outline-danger">
-                                            <i class="fa fa-trash-alt">
-                                            </i>
-                                        </button>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <span class="form-label" >Địa chỉ* </span>
+                                        <td>
+                                            <div class="input-group mb-3">
+                                                <input type="text" required>
+                                            </div>
+                                        </td>
+                                        <span class="select-arrow"></span>
                                     </div>
                                 </div>
                             </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <h3 class="drawer-heading">Urgent Notifications</h3>
-            <div class="drawer-section">
-                <div class="notifications-box">
-                    <div class="vertical-time-simple vertical-without-time vertical-timeline vertical-timeline--one-column">
-                        <div class="vertical-timeline-item dot-danger vertical-timeline-element">
-                            <div><span class="vertical-timeline-element-icon bounce-in"></span>
-                                <div class="vertical-timeline-element-content bounce-in"><h4 class="timeline-title">All Hands Meeting</h4><span class="vertical-timeline-element-date"></span></div>
+                            <div class="form-group">
+                                <span class="form-label">Giống thú cưng</span>
+                                <select class="form-control" required>
+                                    <option value="" selected hidden>Chọn</option>
+                                    <option>Chó</option>
+                                    <option>Mèo</option>
+                                    <option>Khác</option>
+                                </select>
+                                <span class="select-arrow"></span>
                             </div>
-                        </div>
-                        <div class="vertical-timeline-item dot-warning vertical-timeline-element">
-                            <div><span class="vertical-timeline-element-icon bounce-in"></span>
-                                <div class="vertical-timeline-element-content bounce-in"><p>Yet another one, at <span class="text-success">15:00 PM</span></p><span class="vertical-timeline-element-date"></span></div>
+                            <div class="form-group">
+                                <span class="form-label">Dịch vụ</span>
+                                <select class="form-control" required>
+                                    <option value="" selected hidden>Chọn dịch vụ</option>
+                                    <option>Dịch vụ cung cấp đồ cho thú cưng</option>
+                                    <option>Dịch vụ chăm sóc- khám chữa thú cưng</option>
+                                </select>
+                                <span class="select-arrow"></span>
                             </div>
-                        </div>
-                        <div class="vertical-timeline-item dot-success vertical-timeline-element">
-                            <div><span class="vertical-timeline-element-icon bounce-in"></span>
-                                <div class="vertical-timeline-element-content bounce-in">
-                                    <h4 class="timeline-title">Build the production release
-                                        <div class="badge badge-danger ml-2">NEW</div>
-                                    </h4>
-                                    <span class="vertical-timeline-element-date"></span></div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <span class="form-label">Ngày thực hiện khám</span>
+                                        <input class="form-control" type="date" required>
+                                    </div>
+                                </div>
+                                
                             </div>
-                        </div>
-                        <div class="vertical-timeline-item dot-primary vertical-timeline-element">
-                            <div><span class="vertical-timeline-element-icon bounce-in"></span>
-                                <div class="vertical-timeline-element-content bounce-in">
-                                    <h4 class="timeline-title">Something not important
-                                        <div class="avatar-wrapper mt-2 avatar-wrapper-overlap">
-                                            <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                <div class="avatar-icon"><img
-                                                        src="assets/images/avatars/1.jpg"
-                                                        alt=""></div>
-                                            </div>
-                                            <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                <div class="avatar-icon"><img
-                                                        src="assets/images/avatars/2.jpg"
-                                                        alt=""></div>
-                                            </div>
-                                            <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                <div class="avatar-icon"><img
-                                                        src="assets/images/avatars/3.jpg"
-                                                        alt=""></div>
-                                            </div>
-                                            <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                <div class="avatar-icon"><img
-                                                        src="assets/images/avatars/4.jpg"
-                                                        alt=""></div>
-                                            </div>
-                                            <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                <div class="avatar-icon"><img
-                                                        src="assets/images/avatars/5.jpg"
-                                                        alt=""></div>
-                                            </div>
-                                            <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                <div class="avatar-icon"><img
-                                                        src="assets/images/avatars/6.jpg"
-                                                        alt=""></div>
-                                            </div>
-                                            <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                <div class="avatar-icon"><img
-                                                        src="assets/images/avatars/7.jpg"
-                                                        alt=""></div>
-                                            </div>
-                                            <div class="avatar-icon-wrapper avatar-icon-sm">
-                                                <div class="avatar-icon"><img
-                                                        src="assets/images/avatars/8.jpg"
-                                                        alt=""></div>
-                                            </div>
-                                            <div class="avatar-icon-wrapper avatar-icon-sm avatar-icon-add">
-                                                <div class="avatar-icon"><i>+</i></div>
-                                            </div>
-                                        </div>
-                                    </h4>
-                                    <span class="vertical-timeline-element-date"></span></div>
+                            
+                            <div class="form-group">
+                                <span class="form-label">Phòng khám</span>
+                                <select class="form-control" required>
+                                    <option value="" selected hidden>Chọn phòng khám</option>
+                                    <option>Phòng khám Số 3 Văn Cao</option>
+                                    <option>Phòng khám Ngõ 25 Phố Nguyễn Cơ Thạch</option>
+                                </select>
+                                <span class="select-arrow"></span>
                             </div>
-                        </div>
-                        <div class="vertical-timeline-item dot-info vertical-timeline-element">
-                            <div><span class="vertical-timeline-element-icon bounce-in"></span>
-                                <div class="vertical-timeline-element-content bounce-in"><h4 class="timeline-title">This dot has an info state</h4><span class="vertical-timeline-element-date"></span></div>
+                            
+                            <div class="form-btn">
+                                <button class="submit-btn">ĐẶT</button>
                             </div>
-                        </div>
-                        <div class="vertical-timeline-item dot-dark vertical-timeline-element">
-                            <div><span class="vertical-timeline-element-icon is-hidden"></span>
-                                <div class="vertical-timeline-element-content is-hidden"><h4 class="timeline-title">This dot has a dark state</h4><span class="vertical-timeline-element-date"></span></div>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="app-drawer-overlay d-none animated fadeIn"></div><script type="text/javascript" src="./assets/scripts/main.87c0748b313a1dda75f5.js"></script></body>
-</html>
+          </div>
+        </div>
+      </div>
+    </section>
+        
+    
