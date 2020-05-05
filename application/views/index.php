@@ -152,13 +152,13 @@
     						<div class="overlay"></div>
     					</a>
     					<div class="text py-3 pb-4 px-3 text-center">
-    						<h3><a href="#"><?=$row1->ten_dich_vu;?></a></h3>
+    						<h3><a href="<?=base_url();?>dich_vu/hien_thi_dich_vu_chi_tiet/<?=$row1->ma_dv;?>"><?=$row1->ten_dich_vu;?></a></h3>
     						<span class="btn btn-primary"><?=$row1->ten_phong_kham;?></span>
     						<br><span><?=$row1->dia_chi;?></span>
 
     						<div class="d-flex">
     							<div class="pricing">
-		    						<p class="price"><span class="mr-2 price-dc">300.000 đ</span><span class="price-sale">180.000 đ</span></p>
+		    						<p class="price"><span class="price-sale"><?=$row1->gia;?> đ</span></p>
 		    					</div>
 	    					</div>
 	    					<div class="bottom-area d-flex px-3">
@@ -192,7 +192,7 @@
             <p>Giúp bạn tìm kiếm các sản phẩm dành cho thú cưng</p>
           </div>
         </div>
-        <a href="<?=base_url();?>san_pham">
+      
         <div class="row ftco-animate">
           <div class="col-md-12">
             <div class="carousel-testimony owl-carousel">
@@ -205,7 +205,7 @@
             
                   <div class="text text-center">
                     
-                    <p class="name"><?=$row2->ten_sp;?></p>
+                    <p class="name"><a href="<?=base_url();?>san_pham/hien_thi_san_pham_chi_tiet/<?=$row2->ma_sp;?>"><?=$row2->ten_sp;?></p></a>
                     <span class="btn btn-primary"><?=$row2->ten_phong_kham;?></span>
                    <br> <span><?=$row2->dia_chi;?></span>
                     
@@ -224,7 +224,7 @@
             </div>
           </div>
         </div>
-      </a>
+    
       </div>
     </section>
 		
