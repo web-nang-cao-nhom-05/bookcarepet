@@ -124,7 +124,7 @@
 		public function xoa_san_pham($ma_sp)
         {
 			// Thực hiện việc xóa dữ liệu
-			$this->db->where('ma_dv', $ma_sp);
+			$this->db->where('ma_sp', $ma_sp);
 			$this->db->delete('san_pham');
         }
 
