@@ -64,7 +64,7 @@
 			);
 
 			// Thực hiện chèn dữ liệu vào bảng TIN TỨC
-			$this->db->insert('san_pham', $data);
+			$this->db->insert('san_pham_pet', $data);
         }
 
 		public function sua_san_pham()
@@ -118,14 +118,14 @@
 
 			// Thực hiện cập nhật dữ liệu vào bảng TIN TỨC
 			$this->db->where('ma_sp', $ma_sp);
-			$this->db->update('san_pham', $data);
+			$this->db->update('san_pham_pet', $data);
         }
 
 		public function xoa_san_pham($ma_sp)
         {
 			// Thực hiện việc xóa dữ liệu
 			$this->db->where('ma_sp', $ma_sp);
-			$this->db->delete('san_pham');
+			$this->db->delete('san_pham_pet');
         }
 
 	}
