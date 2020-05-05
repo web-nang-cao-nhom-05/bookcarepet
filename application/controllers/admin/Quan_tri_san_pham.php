@@ -19,8 +19,8 @@ class Quan_tri_san_pham extends CI_Controller {
 		// Load thư viện session
 		//$this->load->library('session');
 
-		//if ($this->session->userdata('email')=="") {
-		//	redirect(base_url()."admin/dang_nhap.html");
+		//if ($this->session->userdata('tai_khoan')=="") {
+			//redirect(base_url()."admin/dang_nhap.html");
 		//}
 	}
 
@@ -35,13 +35,7 @@ class Quan_tri_san_pham extends CI_Controller {
 		$data['pk_3'] = $this->m_san_pham->lay_san_pham_theo_ma_phong_kham(3);
 
 		// Hiển thị dữ liệu ra view
-		
-		$data['tieu_de'] = "Quản trị sản phẩm | Bookcarepet";
-		// Load ra được giao diện quản trị hệ thống
-		$this->load->view('admin/v_header', $data);
-		$this->load->view('admin/v_menu');
 		$this->load->view('admin/v_quan_tri_san_pham', $data);
-
 	}
 
 
@@ -52,11 +46,11 @@ class Quan_tri_san_pham extends CI_Controller {
 		$data['ma_phong_kham'] = $this->m_ma_phong_kham->lay_danh_sach_ma_phong_kham();
 
 		// Khai báo tiêu đề của trang
-		$data['tieu_de'] = "Thêm mới sản phẩm ";
+		$data['ten_san_pham'] = "Thêm mới sản phẩm | K19HTTTA";
 
 		// Load ra được giao diện quản trị hệ thống
-		$this->load->view('admin/v_header', $data);
-		$this->load->view('admin/v_menu');
+		//$this->load->view('admin/v_header', $data);
+		//$this->load->view('admin/v_menu');
 		$this->load->view('admin/v_san_pham_them_moi', $data);
 	}
 
@@ -68,7 +62,7 @@ class Quan_tri_san_pham extends CI_Controller {
 		$this->m_san_pham->them_moi_san_pham();
 	
 		// Cho các bạn quay về trang Quản trị tin tức
-		redirect(base_url()."admin/Quan_tri_san_pham.html");
+		redirect(base_url()."admin/quan_tri_san_pham.html");
 	}
 
 	// Hàm này có tác dụng LOAD tin tức có ID cụ thể ra form để sửa thông tin
@@ -84,11 +78,11 @@ class Quan_tri_san_pham extends CI_Controller {
 		$data['ma_phong_kham'] = $this->m_ma_phong_kham->lay_danh_sach_ma_phong_kham();
 
 		// Khai báo tiêu đề của trang
-		$data['tieu_de'] = "Sửa sản phẩm";
+		$data['ten_san_pham'] = "Sửa dịch vụ | K19HTTTA";
 
 		// Load ra được giao diện quản trị hệ thống
-		$this->load->view('admin/v_header', $data);
-		$this->load->view('admin/v_menu');
+	//	$this->load->view('admin/v_header', $data);
+	//	$this->load->view('admin/v_menu');
 		$this->load->view('admin/v_san_pham_sua', $data);
 	}
 
